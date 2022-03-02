@@ -1,12 +1,28 @@
-h1,
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url("img/world-at-night.jpg");
+  height: fit-content;
+}
+h1 {
+  text-align: center;
+}
+* {
+  color: rgba(234, 250, 185, 0.9);
+  filter: blur(0);
+}
 h5 {
   text-align: center;
-  font-weight: 400;
 }
+
 h3 {
   line-height: 50px;
-  font-weight: 400;
 }
+
 .container {
+  border-radius: 5px;
   max-width: 800px;
+  box-shadow: 10px;
+  height: 630px;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 }
