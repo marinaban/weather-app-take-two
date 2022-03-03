@@ -15,6 +15,7 @@ h5 {
   border-bottom: 1px solid rgba(234, 250, 185, 0.9);
   padding-bottom: 5px;
   width: fit-content;
+  margin-bottom: 20px;
 }
 
 h3 {
@@ -25,11 +26,13 @@ h3 {
   border-radius: 5px;
   max-width: 800px;
   box-shadow: 10px;
-  height: 630px;
+  height: 635px;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 }
-
+.descript:first-letter {
+  text-transform: uppercase;
+}
 .termometer {
   position: relative;
   bottom: 3px;
