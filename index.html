@@ -14,7 +14,9 @@
       href="https://fonts.googleapis.com/css2?family=Hubballi&family=Lato&family=Roboto:ital@1&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
+
     <title>Weather App</title>
   </head>
   <body>
@@ -26,12 +28,13 @@
         <!--search bar-->
 
         <div class="row justify-content-center">
-          <div class="col-8 mt-5 mb-5">
+          <div class="col-8 my-5">
             <form class="input-group">
               <input
                 type="text"
                 class="form-control form-control-sm"
                 placeholder="Enter city here"
+                id="enter-city"
               />
               <button type="submit" class="btn btn-primary btn-sm ml-1">
                 <i class="bi bi-search mpl-2 pr-2"></i> Search
@@ -58,18 +61,23 @@
           </div>
           <div class="col-6 border p-4">
             <h1>Split</h1>
-            <div class="date">March 3</div>
+            <div id="date"></div>
             <h3>
-              <img src="img/thermometer.png" alt="temperature" width="25" />
-              12°C|F
+              <span id="temperature">12</span>°C|F
+              <img
+                src="img/thermometer.png"
+                alt="temperature"
+                width="25"
+                class="termometer"
+              />
             </h3>
             <p>
               <img src="img/sun.png" alt="sunrise" width="40" />
               Clear <br />
-              <img src="img/humidity.png" alt="humidity" width="15" /> humidity:
-              20%
-              <br />
-              <img src="img/wind (1).png" alt="windy" width="15" /> wind: 2km/h
+              <img src="img/humidity.png" alt="humidity" width="15" />
+              humidity: <span id="humidity"></span>% <br />
+              <img src="img/wind (1).png" alt="windy" width="15" /> wind:
+              <span id="wind"></span>km/h
               <br />
             </p>
           </div>
@@ -111,5 +119,6 @@
         </div>
       </div>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
