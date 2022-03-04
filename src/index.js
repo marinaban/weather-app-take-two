@@ -30,6 +30,7 @@ function formatDate(timestamp) {
 }
 
 function changeTemperature(response) {
+  console.log(response.data);
   let temperature = document.querySelector("#temperature");
   temperature.innerHTML = Math.round(response.data.main.temp);
   let humidity = document.querySelector("#humidity");
@@ -40,6 +41,11 @@ function changeTemperature(response) {
   date.innerHTML = formatDate(response.data.dt * 1000);
   let description = document.querySelector("#description");
   description.innerHTML = response.data.weather[0].description;
+  let icon = document.querySelector("#icon");
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function changeCityElement(event) {

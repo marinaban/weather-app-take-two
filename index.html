@@ -26,7 +26,6 @@
     >
       <div class="container">
         <!--search bar-->
-
         <div class="row justify-content-center">
           <div class="col-8 my-5">
             <form class="input-group">
@@ -60,27 +59,38 @@
             <div class="details">Details</div>
           </div>
           <div class="col-6 border p-4">
-            <h1>Split</h1>
-            <div id="date"></div>
-            <h3>
-              <span id="temperature">12</span>°C|F
-              <img
-                src="img/thermometer.png"
-                alt="temperature"
-                width="25"
-                class="termometer"
-              />
-            </h3>
-            <p>
-              <img src="img/sun.png" alt="sunrise" width="40" />
-              <div class="descript" id="description"></div>
-              
-              <img src="img/humidity.png" alt="humidity" width="15" />
-              Humidity: <span id="humidity"></span>% <br />
-              <img src="img/wind (1).png" alt="windy" width="15" /> Wind:
-              <span id="wind"></span>km/h
-              <br />
-            </p>
+            <h1>City</h1>
+            <div class="row">
+              <div class="col-6">
+                <div id="date" class="date"></div>
+                <h3>
+                  <span id="temperature" class="current-temperature">12</span
+                  ><span class="degree"
+                    ><small>°C | F</small>
+                    <img
+                      src="img/thermometer.png"
+                      alt="temperature"
+                      width="20"
+                      class="termometer"
+                  /></span>
+                  <div class="max-min-temperature">5° | 12°</div>
+                </h3>
+                <ul>
+                  <li>
+                    <img src="img/humidity.png" alt="humidity" width="15" />
+                    Humidity: <span id="humidity"></span>%
+                  </li>
+                  <li>
+                    <img src="img/wind (1).png" alt="windy" width="15" /> Wind:
+                    <span id="wind"></span>km/h
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 icon">
+                <img src="" width="100" id="icon" />
+                <p class="weather-description" id="description"></p>
+              </div>
+            </div>
           </div>
           <div class="col-3 border days-columns p-3">
             <h5>Tuesday</h5>
