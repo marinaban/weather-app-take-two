@@ -27,11 +27,14 @@ li {
   text-align: left;
   list-style: none;
 }
+form {
+  position: relative;
+  left: 55px;
+}
 
 .container {
   max-width: 750px;
-  margin: 0px auto;
-  height: auto;
+  height: 635px;
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
 }
