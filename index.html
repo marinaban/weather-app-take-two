@@ -58,24 +58,31 @@
             5°
             <div class="details">Details</div>
           </div>
-          <div class="col-6 border p-4">
+          <div class="col-6 border px-4 pt-4">
             <h1>City</h1>
             <div class="row">
               <div class="col-6">
                 <div id="date" class="date"></div>
-                <h3>
-                  <span id="temperature" class="current-temperature">12</span
-                  ><span class="degree"
-                    ><small>°C | F</small>
+                <span id="temperature" class="current-temperature-number"
+                  >0</span
+                >
+
+                <ul class="degree">
+                  <li>
+                    ° C | F
                     <img
                       src="img/thermometer.png"
                       alt="temperature"
                       width="20"
-                      class="termometer"
-                  /></span>
-                  <div class="max-min-temperature">5° | 12°</div>
-                </h3>
-                <ul>
+                      class="termometer-icon"
+                    />
+                  </li>
+                  <li>
+                    <div class="max-min-temperature">5° | 12°</div>
+                  </li>
+                </ul>
+
+                <ul class="current-details">
                   <li>
                     <img src="img/humidity.png" alt="humidity" width="15" />
                     Humidity: <span id="humidity"></span>%

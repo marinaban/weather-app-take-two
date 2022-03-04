@@ -1,7 +1,6 @@
 body {
   font-family: "Lato", sans-serif;
   background-image: url("img/world-at-night.jpg");
-  height: ;
   color: rgba(234, 250, 185, 0.9);
 }
 h1 {
@@ -18,9 +17,6 @@ h5 {
   margin-bottom: 20px;
 }
 
-h3 {
-  line-height: 50px;
-}
 ul {
   margin: 0;
   padding: 0;
@@ -30,8 +26,6 @@ ul {
 li {
   text-align: left;
   list-style: none;
-  position: relative;
-  top: 22px;
 }
 
 .container {
@@ -41,24 +35,26 @@ li {
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
 }
-
-.current-temperature {
+.current-temperature-number {
   font-size: 50px;
 }
 .degree {
+  display: inline-block;
   position: relative;
-  bottom: 20px;
+  top: 0;
+  left: 2px;
 }
-.termometer {
+.termometer-icon {
   position: relative;
   bottom: 1px;
   right: 5px;
 }
 .max-min-temperature {
-  font-size: 15px;
-  position: relative;
-  bottom: 19px;
-  right: -8px;
+  font-size: 16px;
+}
+.current-details {
+  margin-top: 50px;
+  margin-bottom: 0;
 }
 .icon p {
   position: relative;
