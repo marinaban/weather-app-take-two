@@ -47,6 +47,14 @@ form {
   top: 0;
   left: 2px;
 }
+.active {
+  color: rgba(234, 250, 185, 0.9);
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
+  color: rgba(234, 250, 185, 0.9);
+}
 .termometer-icon {
   position: relative;
   bottom: 1px;

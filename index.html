@@ -41,10 +41,10 @@
               />
               <button
                 type="submit"
-                class="btn btn-primary btn-sm ml-1"
+                class="btn btn-primary btn-sm"
                 style="background-color: rgba(255, 228, 196, 0.05)"
               >
-                <i class="bi bi-search mpl-2 pr-2"></i> Search
+                <i class="bi bi-search pr-1"></i>🔍
               </button>
               <button
                 type="submit"
@@ -88,7 +88,8 @@
 
                 <ul class="degree">
                   <li>
-                    ° C | F
+                    <a href="#" id="celsius" class="active">° C</a> |
+                    <a href="#" id="fahrenheit">F</a>
                     <img
                       src="img/thermometer.png"
                       alt="temperature"
@@ -97,7 +98,10 @@
                     />
                   </li>
                   <li>
-                    <div class="max-min-temperature">5° | 12°</div>
+                    <div class="max-min-temperature">
+                      <span id="min-temperature">5</span>° |
+                      <span id="max-temperature">12</span>°
+                    </div>
                   </li>
                 </ul>
 
