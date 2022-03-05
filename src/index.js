@@ -47,7 +47,10 @@ function changeTemperature(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-
+  let minimumTemperature = document.querySelector("#min-temperature");
+  minimumTemperature.innerHTML = Math.round(response.data.main.temp_min);
+  let maximumTemperature = document.querySelector("#max-temperature");
+  maximumTemperature.innerHTML = Math.round(response.data.main.temp_max);
   celsiusTemperature = Math.round(response.data.main.temp);
 }
 
