@@ -27,9 +27,6 @@ li {
   text-align: left;
   list-style: none;
 }
-form {
-  margin: 0 auto;
-}
 
 .container {
   max-width: 750px;
