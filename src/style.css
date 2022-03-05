@@ -28,8 +28,7 @@ li {
   list-style: none;
 }
 form {
-  position: relative;
-  left: 55px;
+  margin: 0 auto;
 }
 
 .container {
