@@ -32,6 +32,7 @@ function formatDate(timestamp) {
 function changeTemperature(response) {
   console.log(response);
 
+  celsiusTemperature = Math.round(response.data.main.temp);
   let temperature = document.querySelector("#temperature");
   temperature.innerHTML = celsiusTemperature;
   let humidity = document.querySelector("#humidity");
@@ -51,7 +52,6 @@ function changeTemperature(response) {
   minimumTemperature.innerHTML = Math.round(response.data.main.temp_min);
   let maximumTemperature = document.querySelector("#max-temperature");
   maximumTemperature.innerHTML = Math.round(response.data.main.temp_max);
-  celsiusTemperature = Math.round(response.data.main.temp);
 }
 
 function changeCityElement(event) {
