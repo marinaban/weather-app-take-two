@@ -22,17 +22,17 @@
   <body>
     <div
       class="container-fluid"
-      style="background-image: url('img/world-at-night.jpg')"
+      style="background-image: url('img/world-at-night.jpg'); height: 635px;"
     >
-      <div class="container">
+      <div class="container w-50">
         <!--search bar-->
         <div class="row justify-content-center">
-          <div class="col-8 mt-5 mb-3">
-            <form class="input-group">
+          <div class="col-8 mt-5 mb-3 ">
+            <form class="input-group ">
               <input
                 type="text"
                 class="form-control form-control-sm"
-                style="background-color: rgba(255, 228, 196, 0)"
+                style="background-color: rgba(255, 228, 196, 0); color: white;"
                 placeholder="Enter city here"
                 id="enter-city"
               />
@@ -46,28 +46,17 @@
             </form>
           </div>
         </div>
-        <!-- second row-->
-        <div class="row mt-4">
-          <div
-            class="col-3 border days-columns p-3"
-            style="background-color: rgba(255, 228, 196, 0.05)"
-          >
-            <h5>Monday</h5>
-            <img src="img/weather (3).png" alt="" width="40" />
-            12°C <br />
-            15° <br />
-            5°
-            <div class="details">Details</div>
-          </div>
-
-          <div
-            class="col-6 border px-4 pt-4"
+        
+        <!-- the current weather column-->
+        <div class="row"> 
+        <div
+            class="col border px-4 pt-4"
             style="background-color: rgba(255, 228, 196, 0.05)"
           >
             <h1>City</h1>
             <div class="row">
               <div class="col-6">
-                <div id="date" class="date"></div>
+                <div id="date" class="date">Date</div>
                 <span id="temperature" class="current-temperature-number"
                   >0</span
                 >
@@ -75,7 +64,7 @@
                 <ul class="degree">
                   <li>
                     <a href="#" id="celsius" class="active">° C</a> |
-                    <a href="#" id="fahrenheit">F</a>
+                    <a href="#" id="fahrenheit">°F</a>
                     <img
                       src="img/thermometer.png"
                       alt="temperature"
@@ -85,8 +74,8 @@
                   </li>
                   <li>
                     <div class="max-min-temperature">
-                      <span id="min-temperature">0</span>° |
-                      <span id="max-temperature">0</span>°
+                      <span id="min-temperature">min</span>° |
+                      <span id="max-temperature">max</span>°
                     </div>
                   </li>
                 </ul>
@@ -107,57 +96,8 @@
                 <p class="weather-description" id="description"></p>
               </div>
             </div>
-          </div>
-
-          <div
-            class="col-3 border days-columns p-3"
-            style="background-color: rgba(255, 228, 196, 0.05)"
-          >
-            <h5>Tuesday</h5>
-            <img src="img/weather (5).png" alt="" width="30" />
-            12°C <br />
-            15° <br />
-            5°
-            <div class="details">Details</div>
-          </div>
-        </div>
-        <!--third row-->
-        <div class="row">
-          <div
-            class="col-4 border days-columns p-3"
-            style="background-color: rgba(255, 228, 196, 0.05)"
-          >
-            <h5>Wednesday</h5>
-            <img src="img/weather (3).png" alt="" width="40" />
-            12°C <br />
-            15° <br />
-            5°
-            <div class="details">Details</div>
-          </div>
-
-          <div
-            class="col-4 border days-columns p-3"
-            style="background-color: rgba(255, 228, 196, 0.05)"
-          >
-            <h5>Thursday</h5>
-            <img src="img/snow.png" alt="" width="30" />
-            12°C <br />
-            15° <br />
-            5°
-            <div class="details">Details</div>
-          </div>
-
-          <div
-            class="col-4 border days-columns p-3"
-            style="background-color: rgba(255, 228, 196, 0.05)"
-          >
-            <h5>Friday</h5>
-            <img src="img/sun.png" alt="sunrise" width="30" />
-            12°C <br />
-            15° <br />
-            5°
-            <div class="details">Details</div>
-          </div>
+          </div>,
+        </div> 
           <small>
             <a
               href="https://github.com/marinaban/weather-app-take-two"
