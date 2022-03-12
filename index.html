@@ -22,17 +22,17 @@
   <body>
     <div
       class="container-fluid"
-      style="background-image: url('img/world-at-night.jpg'); height: 635px;"
+      style="background-image: url('img/world-at-night.jpg'); height: 635px"
     >
       <div class="container w-50">
         <!--search bar-->
         <div class="row justify-content-center">
-          <div class="col-8 mt-5 mb-3 ">
-            <form class="input-group ">
+          <div class="col-8 mt-5 mb-3">
+            <form class="input-group">
               <input
                 type="text"
                 class="form-control form-control-sm"
-                style="background-color: rgba(255, 228, 196, 0); color: white;"
+                style="background-color: rgba(255, 228, 196, 0); color: white"
                 placeholder="Enter city here"
                 id="enter-city"
               />
@@ -46,10 +46,10 @@
             </form>
           </div>
         </div>
-        
+
         <!-- the current weather column-->
-        <div class="row"> 
-        <div
+        <div class="row">
+          <div
             class="col border px-4 pt-4"
             style="background-color: rgba(255, 228, 196, 0.05)"
           >
@@ -96,17 +96,17 @@
                 <p class="weather-description" id="description"></p>
               </div>
             </div>
-          </div>,
-        </div> 
-          <small>
-            <a
-              href="https://github.com/marinaban/weather-app-take-two"
-              target="_blank"
-              >Open-source code</a
-            >
-            by Marina Banić
-          </small>
+            <div class="weather-forecast" id="forecast"></div>
+          </div>
         </div>
+        <small>
+          <a
+            href="https://github.com/marinaban/weather-app-take-two"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Marina Banić
+        </small>
       </div>
     </div>
     <script src="src/index.js"></script>

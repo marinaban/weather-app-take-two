@@ -29,9 +29,30 @@ function formatDate(timestamp) {
   return `${days},` + " " + `${month} ${date}`;
 }
 
-function changeTemperature(response) {
-  console.log(response);
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+                <div class="col-2 m-2"      
+                >
+                  <h5>${day}</h5>
+                  <img src="img/weather (3).png" alt="" width="40" /><br />
+                  
+                  <div id="max-temperature"> 12°</div> 
+                  <div id="min-temperature"> 3°</div> 
+                </div>
 
+                `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+function changeTemperature(response) {
   celsiusTemperature = Math.round(response.data.main.temp);
   let temperature = document.querySelector("#temperature");
   temperature.innerHTML = celsiusTemperature;
@@ -53,7 +74,6 @@ function changeTemperature(response) {
   let maximumTemperature = document.querySelector("#max-temperature");
   maximumTemperature.innerHTML = Math.round(response.data.main.temp_max);
 }
-
 function changeCityElement(event) {
   event.preventDefault();
 
@@ -95,3 +115,5 @@ let degreeCelsius = document.querySelector("#celsius");
 degreeCelsius.addEventListener("click", displayCelsiusTemperature);
 
 let celsiusTemperature = null;
+
+displayForecast();
