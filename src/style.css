@@ -4,8 +4,12 @@ body {
 }
 h1 {
   text-align: center;
-  font-size: 36px;
+  margin-bottom: 10px;
+  font-size: 37px;
   color: rgb(184, 144, 26);
+}
+h1:first-line {
+  text-transform: capitalize;
 }
 h5 {
   border-bottom: 1px solid rgba(234, 250, 185, 0.9);
@@ -27,14 +31,13 @@ li {
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
 }
+
 .current-temperature-number {
-  font-size: 50px;
+  font-size: 65px;
 }
 .degree {
-  display: inline-block;
   position: relative;
-  top: 0;
-  left: 2px;
+  bottom: 35px;
 }
 .active {
   color: rgba(234, 250, 185, 0.9);
@@ -49,18 +52,14 @@ li {
   bottom: 1px;
   right: 5px;
 }
-.max-min-temperature {
-  font-size: 16px;
-  position: relative;
-  bottom: 2px;
-}
+
 .current-details {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .icon p {
   position: relative;
   bottom: 20px;
-  left: 43px;
+  left: 35px;
 }
 .icon p:first-letter {
   text-transform: uppercase;
