@@ -25,37 +25,38 @@
       style="background-image: url('img/world-at-night.jpg'); height: 635px"
     >
       <div class="container w-50">
-        <!--search bar-->
-        <div class="row justify-content-center">
-          <div class="col-8 mt-5 mb-3">
-            <form class="input-group">
-              <input
-                type="text"
-                class="form-control form-control-sm"
-                style="background-color: rgba(255, 228, 196, 0); color: white"
-                placeholder="Enter city here"
-                id="enter-city"
-              />
-              <button
-                type="submit"
-                class="btn btn-outline-warning btn-sm ml-2"
-                style="background-color: rgba(255, 228, 196, 0.05)"
-              >
-                <i class="bi bi-search pr-1"></i>🔍
-              </button>
-            </form>
-          </div>
-        </div>
-
-        <!-- the current weather column-->
         <div class="row">
           <div
-            class="col border px-4 pt-4"
-            style="background-color: rgba(255, 228, 196, 0.05)"
+            class="col mt-5 p-4"
+            style="background-color: rgba(255, 228, 196, 0.1)"
           >
+            <!--search bar-->
+            <div class="row justify-content-center">
+              <div class="col-8 mb-3">
+                <form class="input-group">
+                  <input
+                    type="text"
+                    class="form-control form-control-sm"
+                    style="
+                      background-color: rgba(255, 228, 196, 0);
+                      color: white;
+                    "
+                    placeholder="Enter city here"
+                    id="enter-city"
+                  />
+                  <button
+                    type="submit"
+                    class="btn btn-outline-warning btn-sm ml-2"
+                    style="background-color: rgba(255, 228, 196, 0.05)"
+                  >
+                    <i class="bi bi-search pr-1"></i>🔍
+                  </button>
+                </form>
+              </div>
+            </div>
             <h1>City</h1>
             <div class="row">
-              <div class="col-6">
+              <div class="col-6 pl-5">
                 <div id="date" class="date">Date</div>
                 <span id="temperature" class="current-temperature-number"
                   >0</span
@@ -92,7 +93,7 @@
                 </ul>
               </div>
               <div class="col-6 icon">
-                <img src="" width="100" id="icon" />
+                <img src="" width="150" id="icon" />
                 <p class="weather-description" id="description"></p>
               </div>
             </div>
